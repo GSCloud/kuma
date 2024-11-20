@@ -1,0 +1,12 @@
+# Fred Brooker <git@gscloud.cz>
+# based on: https://github.com/louislam/uptime-kuma/blob/1.23.X/docker/docker-compose.yml
+
+services:
+  uptime-kuma:
+    image: ${KUMA_IMAGE}
+    container_name: ${KUMA_CONTAINER_NAME}
+    volumes:
+      - ./kuma-data:/app/data
+    ports:
+      - ${KUMA_PORT}:3001
+    restart: always
