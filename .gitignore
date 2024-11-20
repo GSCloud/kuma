@@ -8,5 +8,5 @@
 .env
 Thumbs.db
 bak/**
-umami-db-data/
-umami-db-data/**
+kuma-data/
+kuma-data/**

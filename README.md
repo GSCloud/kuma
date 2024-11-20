@@ -2,9 +2,9 @@
 
 ## Uptime Kuma is an easy-to-use self-hosted monitoring tool
 
-Uptime Kuma site: [https://uptime.kuma.pet](https://uptime.kuma.pet)  
-Uptime Kuma repository: [https://github.com/louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)  
-Uptime Kuma in Docker repository: [https://github.com/GSCloud/kuma](https://github.com/GSCloud/kuma)
+Kuma site: [https://uptime.kuma.pet](https://uptime.kuma.pet)  
+Kuma repository: [https://github.com/louislam/uptime-kuma](https://github.com/louislam/uptime-kuma)  
+Kuma in Docker repository: [https://github.com/GSCloud/kuma](https://github.com/GSCloud/kuma)
 
 ## Usage
 

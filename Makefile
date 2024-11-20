@@ -14,7 +14,7 @@ all: info
 
 info:
 	@echo "\n\e[1;32mUptime Kuma in Docker 👾\e[0m v1.0 2024-11-20\n"
-	@echo "\e[0;1m📦️ Kuma\e[0m \t $(umdot) \e[0;4m${KUMA_CONTAINER_NAME}\e[0m \t🚀 http://localhost:${KUMA_PORT}"
+	@echo "\e[0;1m📦️ KUMA\e[0m \t $(umdot) \e[0;4m${KUMA_CONTAINER_NAME}\e[0m \t🚀 http://localhost:${KUMA_PORT}"
 	@echo ""
 
 	@echo " - \e[0;1m install\e[0m - install containers"
