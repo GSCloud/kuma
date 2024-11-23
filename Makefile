@@ -17,17 +17,17 @@ info:
 	@echo "\e[0;1m📦️ KUMA\e[0m \t $(umdot) \e[0;4m${KUMA_CONTAINER_NAME}\e[0m \t🚀 http://localhost:${KUMA_PORT}"
 	@echo ""
 
-	@echo " - \e[0;1m install\e[0m - install containers"
-	@echo " - \e[0;1m start\e[0m - start containers"
-	@echo " - \e[0;1m stop\e[0m - stop containers"
-	@echo " - \e[0;1m test\e[0m - test containers"
-	@echo " - \e[0;1m kill\e[0m - kill containers"
-	@echo " - \e[0;1m remove\e[0m - remove containers"
+	@echo " - \e[0;1m install\e[0m - install container"
+	@echo " - \e[0;1m start\e[0m - start container"
+	@echo " - \e[0;1m stop\e[0m - stop container"
+	@echo " - \e[0;1m test\e[0m - test container"
+	@echo " - \e[0;1m kill\e[0m - kill container"
+	@echo " - \e[0;1m remove\e[0m - remove container"
 	@echo " - \e[0;1m backup\e[0m - backup database"
 	@echo " - \e[0;1m restore\e[0m - restore database"
 	@echo " - \e[0;1m exec\e[0m - run shell inside container"
 	@echo " - \e[0;1m exec run='<command>'\e[0m - run <command> inside container"
-	@echo " - \e[0;1m debug\e[0m - install containers, run interactively"
+	@echo " - \e[0;1m debug\e[0m - install container, run interactively"
 	@echo " - \e[0;1m config\e[0m - display Docker compose configuration"
 	@echo " - \e[0;1m logs\e[0m - display logs"
 	@echo " - \e[0;1m purge\e[0m - delete persistent data ❗️"
@@ -35,7 +35,7 @@ info:
 	@echo ""
 
 docs:
-	@echo "transpiling documentation ..."
+	@echo "transpiling documentation"
 	@bash ./bin/create_pdf.sh
 
 debug:
@@ -43,18 +43,17 @@ debug:
 
 install: remove
 	@date
-	@echo "installing containers ..."
+	@echo "installing container"
 	@docker compose up -d
 	@echo "\n\e[0;1m📦️ Kuma\e[0m: 🚀 http://localhost:${KUMA_PORT}\n"
 	@date
-	@echo ""
 
 start:
-	@echo "starting containers ..."
+	@echo "starting container"
 	@docker start ${KUMA_CONTAINER_NAME}
 
 stop:
-	@echo "stopping containers ..."
+	@echo "stopping container"
 	@-docker stop ${KUMA_CONTAINER_NAME}
 
 kill:
@@ -62,7 +61,7 @@ kill:
 	@docker compose kill
 
 remove:
-	@echo "removing containers ..."
+	@echo "removing container"
 	@-docker rm ${KUMA_CONTAINER_NAME} --force 2>/dev/null
 
 config:

@@ -10,17 +10,17 @@ Kuma in Docker repository: [https://github.com/GSCloud/kuma](https://github.com/
 
 Run `make`:
 
-- install - install containers
-- start - start containers
-- stop - stop containers
-- test - test containers
-- kill - kill containers
-- remove - remove containers
+- install - install container
+- start - start container
+- stop - stop container
+- test - test container
+- kill - kill container
+- remove - remove container
 - backup - backup database
 - restore - restore database
 - exec - run shell inside container
 - exec run='\<command\>' - run \<command\> inside container
-- debug - install containers, run interactively
+- debug - install container, run interactively
 - config - display Docker compose configuration
 - logs - display logs
 - purge - delete persistent data ❗️
