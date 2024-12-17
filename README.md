@@ -1,4 +1,4 @@
-# Uptime Kuma in Docker v1.0 2024-11-20
+# Uptime Kuma in Docker v1.1 2024-12-17
 
 ## Uptime Kuma is an easy-to-use self-hosted monitoring tool
 
@@ -18,9 +18,9 @@ Run `make`:
 - remove - remove container
 - backup - backup database
 - restore - restore database
-- exec - run shell inside container
-- exec run='\<command\>' - run \<command\> inside container
-- debug - install container, run interactively
+- exec - run interactive shell
+- exec run='\<command\>' - run \<command\> inside shell
+- debug - install and run in the foreground
 - config - display Docker compose configuration
 - logs - display logs
 - purge - delete persistent data ❗️
@@ -32,11 +32,10 @@ Copy `.env-dist` to `.env` and modify the file according to your needs.
 
 ## Examples
 
-- `make purge install` - purge everything and fresh install
-- `make backup test` - make backup and test
+- `make install` - install
+- `make backup` - backup
 - `make purge restore` - purge everything and restore from backup
 - `make logs` - show logs
-- `make test` - test container
 
 ---
 

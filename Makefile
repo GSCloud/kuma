@@ -13,7 +13,7 @@ endif
 all: info
 
 info:
-	@echo "\n\e[1;32mUptime Kuma in Docker 👾\e[0m v1.0 2024-11-20\n"
+	@echo "\n\e[1;32mUptime Kuma in Docker 👾\e[0m v1.1 2024-12-17\n"
 	@echo "\e[0;1m📦️ KUMA\e[0m \t $(umdot) \e[0;4m${KUMA_CONTAINER_NAME}\e[0m \t🚀 http://localhost:${KUMA_PORT}"
 	@echo ""
 
@@ -25,9 +25,9 @@ info:
 	@echo " - \e[0;1m remove\e[0m - remove container"
 	@echo " - \e[0;1m backup\e[0m - backup database"
 	@echo " - \e[0;1m restore\e[0m - restore database"
-	@echo " - \e[0;1m exec\e[0m - run shell inside container"
-	@echo " - \e[0;1m exec run='<command>'\e[0m - run <command> inside container"
-	@echo " - \e[0;1m debug\e[0m - install container, run interactively"
+	@echo " - \e[0;1m exec\e[0m - run interactive shell"
+	@echo " - \e[0;1m exec run='<command>'\e[0m - run <command> in shell"
+	@echo " - \e[0;1m debug\e[0m - install and run in the foreground"
 	@echo " - \e[0;1m config\e[0m - display Docker compose configuration"
 	@echo " - \e[0;1m logs\e[0m - display logs"
 	@echo " - \e[0;1m purge\e[0m - delete persistent data ❗️"
