@@ -20,8 +20,8 @@ Run `make`:
 - restore - restore database
 - exec - run interactive shell
 - exec run='\<command\>' - run \<command\> inside shell
-- debug - install and run in the foreground
-- config - display Docker compose configuration
+- debug - run in the foreground
+- config - display configuration
 - logs - display logs
 - purge - delete persistent data ❗️
 - docs - transpile documentation into PDF
