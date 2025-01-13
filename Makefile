@@ -46,7 +46,7 @@ install: remove
 	@date
 	@echo "installing container"
 	@docker compose up -d
-	@echo "\n\e[0;1m📦️ Kuma\e[0m: 🚀 http://localhost:${KUMA_PORT}\n"
+	@echo "\n\e[0;1m📦️ Kuma\e[0m 🚀 http://localhost:${KUMA_PORT}\n"
 	@date
 
 start:
